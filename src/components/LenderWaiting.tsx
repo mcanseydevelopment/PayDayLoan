@@ -1,19 +1,16 @@
 // components/LenderWaiting.tsx
-import Image from 'next/image';
 import React from 'react';
-import Lenderwaiting from "../../../public/LenderWaitingImage.svg"
+import Lenderwaiting from "../assets/images/LenderWaitingImage.svg";
 
 const LenderWaiting: React.FC = () => {
     return (
     <div className="bg-gradient-to-b from-[#0D924B] to-[#347222] text-white md:py-12 py-4">
         <div className="mx-auto text-center">
           <div className="mb-8">
-            <Image
+            <img
               src={Lenderwaiting}
               alt="Illustration"
-              width={120}
-              height={120}
-              className='mx-auto'
+              className="mx-auto w-[120px] h-[120px]"
             />
           </div>
           <h2 className="text-[4.5rem] font-bold mb-1">YOUR LENDER</h2>

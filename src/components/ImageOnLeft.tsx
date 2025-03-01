@@ -1,6 +1,4 @@
-import Image from "next/image"
-import Link from "next/link"
-import smilingman from "../../../public/smiling-man.svg"
+import smilingman from "../assets/images/smiling-man.svg"
 export default function ImageOnLeft() {
   return (
     <div className="bg-[#F6FAFF] mt-12">
@@ -8,14 +6,10 @@ export default function ImageOnLeft() {
         {/* Left side - Image */}
         <div className="w-full xl:w-1/2 relative xl:h-auto h-[400px] rounded-xl"> {/* Removed padding classes */}
           <div className="relative w-full h-full flex items-center justify-center"> {/* Simplified justify classes */}
-            <Image
+          <img
               src={smilingman}
               alt="Person explaining loan services"
-              className="object-contain w-[400px] lg:w-[450px] xl:w-[600px]" // Updated responsive widths
-              width={600}
-              height={500}
-              priority
-              sizes="(max-width: 768px) 400px, (max-width: 1024px) 450px, 600px"
+              className="object-contain w-[400px] lg:w-[450px] xl:w-[600px]"
             />
           </div>
         </div>
@@ -50,12 +44,12 @@ export default function ImageOnLeft() {
 
             {/* CTA Button */}
             <div className="mt-8 flex justify-center md:justify-start">
-              <Link
+              <a
               href=""
               className="inline-block shadow-[0px_8px_22px_0px_#1EB9C736] bg-gradient-to-r from-[#7396F2] to-[#3767ED] hover:from-[#3767ED] hover:to-[#7396F2] text-white font-medium py-3 px-8 rounded-full transition-colors duration-200"
               >
               Apply for a Loan
-              </Link>
+              </a>
             </div>
             </div>
         </div>

@@ -1,6 +1,4 @@
 import type React from "react"
-import Link from "next/link"
-
 const ProductFeatures: React.FC = () => {
   return (
     <section className="bg-[#1a1a1a] text-white py-16 px-4 md:px-8 lg:px-16">
@@ -26,7 +24,7 @@ const ProductFeatures: React.FC = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             </p>
             {/* Learn More Link */}
-            <Link href="#" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
+            <a href="#" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +35,7 @@ const ProductFeatures: React.FC = () => {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
           </div>
           {/* Feature 2 */}
           <div className="relative px-6 py-8">
@@ -58,7 +56,7 @@ const ProductFeatures: React.FC = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             </p>
             {/* Learn More Link */}
-            <Link href="#" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
+            <a href="#" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,7 +67,7 @@ const ProductFeatures: React.FC = () => {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
           </div>
           {/* Feature 3 */}
           <div className="px-6 py-8">
@@ -87,7 +85,7 @@ const ProductFeatures: React.FC = () => {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
             </p>
             {/* Learn More Link */}
-            <Link href="#" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
+            <a href="#" className="inline-flex items-center text-white hover:text-gray-300 transition-colors">
               Learn More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +96,7 @@ const ProductFeatures: React.FC = () => {
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

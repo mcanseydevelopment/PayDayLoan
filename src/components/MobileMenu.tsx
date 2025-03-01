@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from 'react';
 import arrowIcon from '../assets/images/Arrow45.png';
 import { motion, AnimatePresence } from 'framer-motion';

@@ -1,6 +1,6 @@
-import type React from "react"
-import Image from "next/image"
-import girlwithcurlyhair from "../../../public/our-help--desktop.jpg"
+import React from "react";
+import girlwithcurlyhair from "../assets/images/our-help--desktop.jpg";
+
 const LoanComponent: React.FC = () => {
   return (
     <div className="max-w-6xl mx-auto py-28">
@@ -74,11 +74,10 @@ const LoanComponent: React.FC = () => {
             
             {/* Image container with fixed heights */}
             <div className="relative bg-green-100 rounded-2xl overflow-hidden h-[320px] md:h-[400px] lg:h-[480px]">
-              <Image
+              <img
                 src={girlwithcurlyhair}
                 alt="Woman with curly hair"
-                fill
-                className="object-cover"
+                className="object-cover w-full h-full"
               />
             </div>
           </div>
@@ -116,8 +115,8 @@ const LoanComponent: React.FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LoanComponent
+export default LoanComponent;
 

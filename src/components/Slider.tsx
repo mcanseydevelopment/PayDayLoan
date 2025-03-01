@@ -1,7 +1,5 @@
-// components/Slider.tsx
-"use client";
-import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
+import sliderImage from '../assets/images/slider-illustration.jpg';
 
 const slides = [
   {
@@ -10,7 +8,7 @@ const slides = [
   },
   {
     title: 'Pick Loan Offer',
-    description: 'Connect with one or more loan offers and decide if it’s right for you',
+    description: 'Connect with one or more loan offers and decide if it\'s right for you',
   },
   {
     title: 'Get Cash',
@@ -33,7 +31,7 @@ const Slider: React.FC = () => {
     <div className="bg-green-700 text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 p-4">
-          <h2 className="text-3xl font-semibold mb-4">It’s That Simple As Illustrated</h2>
+          <h2 className="text-3xl font-semibold mb-4">It's That Simple As Illustrated</h2>
           <div className="space-y-4">
             {slides.map((slide, index) => (
               <div key={index} className={`transition-opacity duration-500 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}>
@@ -51,10 +49,10 @@ const Slider: React.FC = () => {
             <div className="absolute top-2 right-2 bg-white text-green-700 rounded-full h-8 w-8 flex items-center justify-center">
               {currentSlide + 1}
             </div>
-            <Image
-            src="/path-to-your-image.jpg"
-            alt="Illustration"
-            className="w-full h-auto"
+            <img
+              src={sliderImage}
+              alt="Illustration"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>

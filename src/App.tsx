@@ -14,8 +14,8 @@ function App() {
     <>
         <Navbar />
         <HeroSection />
-        {/* <HowItWorks />
-        <ImageOnLeft />
+        <HowItWorks />
+       {/*  <ImageOnLeft />
         <ProductFeatures />
         <ImageOnRight />
         <FAQSection />

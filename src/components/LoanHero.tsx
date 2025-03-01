@@ -1,24 +1,7 @@
-"use client"
-
-import type React from "react"
-
-import { useState } from "react"
-import Link from "next/link"
-import { ArrowRight, Edit3, Lock, DollarSign, Shield } from "lucide-react"
+import { Edit3, DollarSign, Shield } from "lucide-react"
 import MyForm from "./MyForm"
 
 export default function LoanHero() {
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-  })
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -26,32 +9,32 @@ export default function LoanHero() {
       <header className="bg-white py-4 px-4 md:px-8 border-b">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <a href="/" className="flex items-center">
               <div className="relative h-8 w-8 mr-2">
                 <div className="absolute inset-0 bg-green-500 rounded-md flex items-center justify-center">
                   <DollarSign className="h-5 w-5 text-white" />
                 </div>
               </div>
               <span className="text-lg font-bold uppercase">CASHTODAYASAP</span>
-            </Link>
+            </a>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/about" className="text-gray-700 hover:text-green-600">
+            <a href="/about" className="text-gray-700 hover:text-green-600">
               About Us
-            </Link>
-            <Link href="/faq" className="text-gray-700 hover:text-green-600">
+            </a>
+            <a href="/faq" className="text-gray-700 hover:text-green-600">
               FAQ
-            </Link>
+            </a>
             <div className="text-gray-700">Personal Loans from $200—$5,000</div>
           </div>
 
-          <Link
+          <a
             href="/login"
             className="border-2 border-green-700 text-green-700 hover:bg-green-700 hover:text-white px-6 py-2 rounded-md font-medium transition-colors"
           >
             LOGIN
-          </Link>
+          </a>
         </div>
       </header>
 

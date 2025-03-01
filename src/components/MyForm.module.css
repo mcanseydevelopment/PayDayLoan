@@ -1,0 +1,100 @@
+.formWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+:global(.jsf-inner-container) {
+  min-height: 510px;
+  border-radius: 20px;
+  border: 1px solid #e8e9ef;
+  background: #eff1f8;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+
+/* Style the form container */
+:global(.jsf-container) {
+  padding: 24px;
+  color: #2b335c;
+  text-align: left;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form title */
+:global(.jsf-form-title) {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+:global(.jsf-form-title-main span) {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2b335c;
+}
+
+/* Style the buttons group */
+:global(.jsf-btn-group) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* Style individual buttons */
+:global(.jsf-btn-radio) {
+  padding: 16px 28px;
+  background: #ffffff;
+  border: 2px solid #e8e9ef;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 16px;
+  color: #2b335c;
+  min-width: 180px;
+  text-align: center;
+}
+
+:global(.jsf-btn-radio:hover) {
+  background: #347222;
+  border-color: #347222;
+  color: #fff;
+}
+
+:global(.jsf-btn-radio.active) {
+  background: var(--jsf-primary-color);
+  border-color: var(--jsf-primary-color);
+  color: var(--jsf-contrast-color);
+}
+
+:global(.jsf-progress-bar) {
+  margin: 20px 0;
+}
+
+:global(.jsf-ssl-secured-container) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  color: #2b335c;
+  font-size: 14px;
+}
+
+:global(.jsf-progress-circle) {
+  stroke: #e8e9ef;
+}
+
+:global(.jsf-progress-line) {
+  stroke: var(--jsf-primary-color);
+}
+
+:global(.jsf-progress-percents) {
+  color: #2b335c;
+  font-weight: 600;
+}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const NotificationStrip = () => {
   return (
     <div className="hidden lg:block bg-[#242424] text-white py-2"> {/* Added hidden lg:block */}

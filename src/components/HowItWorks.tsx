@@ -1,9 +1,8 @@
 import React from "react";
-import { StaticImageData } from "next/image";
-import drawingmode from "../../../public/drawing-mode.svg"
-import Image from "next/image";
+import drawingmode from "../assets/images/drawing-mode.svg";
+
 interface StepProps {
-  icon: StaticImageData;
+  icon: string;
   title: string;
   description: string;
   bgColor: string;
@@ -16,7 +15,7 @@ const steps: StepProps[] = [
     title: "Step 1 - Apply Online",
     description:
       "Complete a quick and secure online application in just a few minutes. No long paperwork or in-person visits",
-    bgColor: "#FEEDEC", // Changed from bg-red-100
+    bgColor: "#FEEDEC",
     iconBg: "#FF6A58"
   },
   {
@@ -24,7 +23,7 @@ const steps: StepProps[] = [
     title: "Step 2 - Get Approved",
     description:
       "Our system instantly reviews your application. No credit check required! Whether you have good.",
-    bgColor: "#F5EBF2", // Changed from bg-purple-100
+    bgColor: "#F5EBF2",
     iconBg: "#C166A6"
   },
   {
@@ -32,7 +31,7 @@ const steps: StepProps[] = [
     title: "Step 3 - Receive Cash",
     description:
       "Complete a quick and secure online application in just a few minutes. No long paperwork or in-person visits",
-    bgColor: "#EBFCFF", // Changed from bg-blue-100
+    bgColor: "#EBFCFF",
     iconBg: "#019CB6"
   },
 ];
@@ -50,15 +49,15 @@ const HowItWorks: React.FC = () => {
         {steps.map((step, index) => (
           <div
             key={index}
-            className="w-full min-h-[240px] p-8 rounded-[12px] flex flex-col justify-between" // Reduced height and padding
+            className="w-full min-h-[240px] p-8 rounded-[12px] flex flex-col justify-between"
             style={{ backgroundColor: step.bgColor }}
           >
             <div>
               <div
-                className="w-14 h-14 flex items-center justify-center rounded-full mb-4" // Reduced bottom margin
+                className="w-14 h-14 flex items-center justify-center rounded-full mb-4"
                 style={{ backgroundColor: step.iconBg }}
               >
-                <Image 
+                <img 
                   src={step.icon}
                   alt="icon"
                   className="w-7 h-7"
