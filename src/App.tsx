@@ -9,7 +9,7 @@ import ImportantDisclosures from './components/ImportantDisclosures'
 import Navbar from './components/Navbar'
 import ProductFeatures from './components/ProductFeatures'
 import TestimonialCarousel from './components/testimonials-slider'
-function App() {
+function App() { 
   return (
     <>
         <Navbar />
