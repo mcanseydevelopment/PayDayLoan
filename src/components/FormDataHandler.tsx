@@ -45,7 +45,7 @@ const FormDataHandler = () => {
 
             console.log("Sending form data:", formData);
 
-            const response = await fetch("/api/formdata", {
+            const response = await fetch("https://payday-loan-lovat.vercel.app/api/formdata", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",

@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
         </div>
         {/* Right Section - Form */}
         <div className="xl:w-[45%] w-full z-10">
-          <div className="w-full max-w-xl mx-auto overflow-hidden rounded-lg" id="form-container">
+          <div className="w-full max-w-xl mx-auto rounded-lg" id="form-container">
             <MyForm />
           </div>
         </div>
