@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
-// import neha from "../assets/images/testimonial-img/neha-gupta.png";
-// import priya from "../assets/images/testimonial-img/priya-malhotra.png";
-// import rakesh from "../assets/images/testimonial-img/rakesh-sharma.png";
-// import vikram from "../assets/images/testimonial-img/vikram-joshi.png";
+import neha from "../assets/images/neha-gupta.png";
+import priya from "../assets/images/priya-malhotra.png";
+import rakesh from "../assets/images/rakesh-sharma.png";
+import vikram from "../assets/images/vikram-joshi.png";
 
 const testimonials = [
   {
@@ -12,7 +12,7 @@ const testimonials = [
     title: 'Position, Company name',
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-    image: "",
+    image: rakesh,
     rating: 5
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     title: 'Position, Company name',
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-    image: "",
+    image: priya,
     rating: 5
   },
   {
@@ -28,7 +28,7 @@ const testimonials = [
     title: 'Position, Company name',
     content:
       "I needed an urgent AC repair, and 24x7 Services Centers came through! The technician was on time, friendly, and fixed the issue quickly. Excellent service from start to finish!",
-    image: "",
+    image: neha,
     rating: 5
   },
   {
@@ -36,7 +36,7 @@ const testimonials = [
     title: 'Position, Company name',
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-    image: "",
+    image: vikram,
     rating: 5
   },
 ];

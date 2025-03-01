@@ -3,7 +3,7 @@ import smilinggirl from "../assets/images/smiling girl.png";
 export default function ImageOnRight() {
   return (
     <div className="bg-[#F6FAFF]">
-      <div className="max-w-7xl xl:mx-auto md:py-20 py-4 lg:mx-10 sm:mx-3 px-4 mt-4 md:mt-0 mx-auto rounded-lg overflow-hidden shadow-sm flex flex-col xl:flex-row-reverse">
+      <div className="max-w-7xl xl:mx-auto md:py-20 py-4 lg:mx-10 sm:mx-3 px-4 mt-4 md:mt-0 mx-auto rounded-lg overflow-hidden flex flex-col xl:flex-row-reverse">
         {/* Right side - Image */}
         <div className="w-full xl:w-1/2 relative xl:h-auto h-[400px] rounded-xl">
           <div className="relative w-full h-full flex items-center justify-center">

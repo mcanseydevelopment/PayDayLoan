@@ -3,6 +3,7 @@ import React from "react";
 const ImportantDisclosures: React.FC = () => {
   return (
 <>
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-white text-xl font-semibold bg-blue-600 py-4 px-6 rounded-t-lg">
           Important Disclosures. Please Read Carefully.
         </h2>
@@ -46,6 +47,7 @@ const ImportantDisclosures: React.FC = () => {
             a tribal jurisdiction.
           </p>
         </div>
+      </div>
     </>
   );
 };

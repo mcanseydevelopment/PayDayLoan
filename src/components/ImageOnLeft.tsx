@@ -2,7 +2,7 @@ import smilingman from "../assets/images/smiling-man.svg"
 export default function ImageOnLeft() {
   return (
     <div className="bg-[#F6FAFF] mt-12">
-      <div className="max-w-7xl xl:mx-auto md:py-20 py-4 lg:mx-10 sm:mx-3 px-4 mt-4 md:mt-0 mx-auto rounded-lg overflow-hidden shadow-sm flex flex-col xl:flex-row"> {/* Updated padding classes */}
+      <div className="max-w-7xl xl:mx-auto md:py-20 py-4 lg:mx-10 sm:mx-3 px-4 mt-4 md:mt-0 mx-auto rounded-lg overflow-hidden flex flex-col xl:flex-row"> {/* Updated padding classes */}
         {/* Left side - Image */}
         <div className="w-full xl:w-1/2 relative xl:h-auto h-[400px] rounded-xl"> {/* Removed padding classes */}
           <div className="relative w-full h-full flex items-center justify-center"> {/* Simplified justify classes */}

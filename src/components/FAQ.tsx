@@ -24,7 +24,7 @@ const FAQ: React.FC = () => {
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+            <div key={index} className="bg-white p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-2 text-green-700">
                 {index + 1}. {faq.question}
               </h3>
