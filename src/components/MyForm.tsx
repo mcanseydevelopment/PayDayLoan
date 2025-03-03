@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react';
 import FormDataHandler from './FormDataHandler';
 
@@ -42,6 +43,57 @@ export default function MyForm() {
                     theme: 'theme5',
                     leadtypeid: 19
                   }
+                };
+                
+                // Intercept navigation within the iframe
+                // This will capture redirects from the form submission
+                document.addEventListener('click', function(e) {
+                  // Check if it's a link that would navigate away
+                  if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
+                    const url = e.target.getAttribute('href');
+                    // Send message to parent to handle the redirect
+                    window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                    e.preventDefault(); // Prevent the default navigation
+                  }
+                }, true);
+                
+                // Also intercept form submissions that might redirect
+                const originalSubmit = HTMLFormElement.prototype.submit;
+                HTMLFormElement.prototype.submit = function() {
+                  // Store the form action URL to check after submission
+                  const formAction = this.action;
+                  // Call the original submit method
+                  originalSubmit.apply(this, arguments);
+                  
+                  // After submission, check if we're being redirected
+                  setTimeout(function() {
+                    // If we detect a redirect attempt within the iframe, notify the parent
+                    if (window.location.href !== document.referrer) {
+                      window.parent.postMessage({ 
+                        type: 'redirect', 
+                        url: window.location.href 
+                      }, '*');
+                    }
+                  }, 500);
+                };
+                
+                // Intercept location changes
+                const originalAssign = window.location.assign;
+                window.location.assign = function(url) {
+                  window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                  return false;
+                };
+                
+                const originalReplace = window.location.replace;
+                window.location.replace = function(url) {
+                  window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                  return false;
+                };
+                
+                // Override window.open
+                window.open = function(url) {
+                  window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                  return null;
                 };
               </script>
               <script src="https://formrequests.com/installment36/1q_pd_im/form-loader.js" async></script>
@@ -101,6 +153,7 @@ export default function MyForm() {
     }
     
     // Set up event listener for messages from iframe
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const handleMessage = (event: any) => {
       // Check if the message is a resize request
       if (event.data && event.data.type === 'resize') {
@@ -111,6 +164,12 @@ export default function MyForm() {
         if (iframe) {
           iframe.style.height = `${event.data.height}px`;
         }
+      }
+      
+      // Handle redirect messages from the iframe
+      if (event.data && event.data.type === 'redirect') {
+        // Redirect the parent window instead of the iframe
+        window.location.href = event.data.url;
       }
     };
     
