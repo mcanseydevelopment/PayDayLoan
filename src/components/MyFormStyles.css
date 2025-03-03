@@ -1,0 +1,38 @@
+/* Container for the form */
+.form-isolated-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 500px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Inner container for form elements */
+.form-container-inner {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+}
+
+/* Target the form elements specifically to ensure they display correctly */
+#jsf-form-container jsf-form,
+#jsf-form-container .jsf-form,
+#jsf-form-container .jsf-form-container {
+  display: block;
+}
+
+/* Ensure form buttons have proper styling */
+.form-isolated-container .jsf-btn-radio {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Override some specific form styles to ensure visibility */
+.form-isolated-container .jsf-form-title,
+.form-isolated-container .jsf-btn-group {
+  display: block !important;
+}
