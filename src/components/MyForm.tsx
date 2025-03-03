@@ -13,8 +13,6 @@ export default function MyForm() {
     iframe.style.border = 'none';
     iframe.title = "Loan Application Form";
     iframe.id = "formIframe";
-    // Critical: Set the iframe name to _top to allow proper redirects
-    iframe.name = "_top";
     
     // Append iframe to the container
     const formContainer = document.getElementById('form-container');
@@ -34,68 +32,68 @@ export default function MyForm() {
               <title>Form</title>
               <style>
                 body { margin: 0; padding: 0; }
-                
-                /* Add this style to contain the third-party CSS */
-                #form-container-iframe {
-                  all: initial;
-                  display: block;
-                }
               </style>
-              <base target="_top">
             </head>
             <body>
               <div id="form-container-iframe"></div>
               <script>
-                // Override window navigation functions to break out of iframe
-                (function() {
-                  // Store original functions
-                  const originalWindowOpen = window.open;
-                  const originalLocationAssign = window.location.assign;
-                  const originalLocationReplace = window.location.replace;
-                  const originalLocationHref = Object.getOwnPropertyDescriptor(window.location, 'href').set;
-
-                  // Override window.open
-                  window.open = function(url, target, features) {
-                    if (!target || target === '_self') {
-                      target = '_top';
-                    }
-                    return originalWindowOpen.call(this, url, target, features);
-                  };
-
-                  // Override location.assign
-                  window.location.assign = function(url) {
-                    window.top.location.href = url;
-                    return false;
-                  };
-
-                  // Override location.replace
-                  window.location.replace = function(url) {
-                    window.top.location.href = url;
-                    return false;
-                  };
-
-                  // Override location.href setter
-                  Object.defineProperty(window.location, 'href', {
-                    set: function(url) {
-                      window.top.location.href = url;
-                      return url;
-                    }
-                  });
-
-                  // Make sure all links open in _top
-                  document.addEventListener('click', function(e) {
-                    if (e.target.tagName === 'A') {
-                      e.target.setAttribute('target', '_top');
-                    }
-                  }, true);
-                })();
-
                 window.lmpost = {
                   options: {
                     campaignid: 279611,
                     theme: 'theme5',
                     leadtypeid: 19
                   }
+                };
+                
+                // Intercept navigation within the iframe
+                // This will capture redirects from the form submission
+                document.addEventListener('click', function(e) {
+                  // Check if it's a link that would navigate away
+                  if (e.target.tagName === 'A' && e.target.getAttribute('href')) {
+                    const url = e.target.getAttribute('href');
+                    // Send message to parent to handle the redirect
+                    window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                    e.preventDefault(); // Prevent the default navigation
+                  }
+                }, true);
+                
+                // Also intercept form submissions that might redirect
+                const originalSubmit = HTMLFormElement.prototype.submit;
+                HTMLFormElement.prototype.submit = function() {
+                  // Store the form action URL to check after submission
+                  const formAction = this.action;
+                  // Call the original submit method
+                  originalSubmit.apply(this, arguments);
+                  
+                  // After submission, check if we're being redirected
+                  setTimeout(function() {
+                    // If we detect a redirect attempt within the iframe, notify the parent
+                    if (window.location.href !== document.referrer) {
+                      window.parent.postMessage({ 
+                        type: 'redirect', 
+                        url: window.location.href 
+                      }, '*');
+                    }
+                  }, 500);
+                };
+                
+                // Intercept location changes
+                const originalAssign = window.location.assign;
+                window.location.assign = function(url) {
+                  window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                  return false;
+                };
+                
+                const originalReplace = window.location.replace;
+                window.location.replace = function(url) {
+                  window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                  return false;
+                };
+                
+                // Override window.open
+                window.open = function(url) {
+                  window.parent.postMessage({ type: 'redirect', url: url }, '*');
+                  return null;
                 };
               </script>
               <script src="https://formrequests.com/installment36/1q_pd_im/form-loader.js" async></script>
@@ -167,6 +165,12 @@ export default function MyForm() {
           iframe.style.height = `${event.data.height}px`;
         }
       }
+      
+      // Handle redirect messages from the iframe
+      if (event.data && event.data.type === 'redirect') {
+        // Redirect the parent window instead of the iframe
+        window.location.href = event.data.url;
+      }
     };
     
     window.addEventListener('message', handleMessage);
@@ -177,7 +181,7 @@ export default function MyForm() {
         formContainer.removeChild(iframe);
       }
     };
-  }, []); // Empty dependency array to prevent recreation
+  }, []); // Remove iframeHeight dependency to prevent recreation
 
   return (
     <>
