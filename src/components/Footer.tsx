@@ -8,9 +8,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">Paydeayloan</h2>
+            <h2 className="text-2xl font-bold mb-4">PlansLoan</h2>
             <p className="text-gray-300 mb-6">
-              Lorem Ipsum is simply dummy text of the printing and are typesetting industry typesetting industry.
+              Your trusted partner for quick and convenient online payday loans. We connect you with reliable lenders nationwide to help you manage unexpected expenses with ease.
             </p>
 
             {/* Social Media Icons */}
@@ -33,15 +33,15 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MapPin className="mr-2" size={20} />
-                <span>Mumbai, India</span>
+                <span>2504 Broadway, New York, NY 10025</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2" size={20} />
-                <span>91 98765 43210</span>
+                <span>1-800-555-0123</span>
               </div>
               <div className="flex items-center">
                 <Mail className="mr-2" size={20} />
-                <span>Lendingpalm@gmail.com</span>
+                <span>support@plansloan.com</span>
               </div>
             </div>
           </div>
@@ -73,28 +73,28 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Services as */}
+          {/* Services */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-gray-300 hover:text-white">
-                  Personal Loan
+                  Payday Loans
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white">
-                  Insurance
+                  Short-term Loans
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white">
-                  Lorem ipsum
+                  Emergency Loans
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-white">
-                  Lorem ipsum
+                  Cash Advances
                 </a>
               </li>
             </ul>
@@ -125,7 +125,12 @@ const Footer: React.FC = () => {
 
         {/* Divider */}
         <div className="border-t border-gray-800 mt-12 pt-6">
-          <p className="text-center text-gray-400">© 2025 VSG pest. All rights reserved.</p>
+          <p className="text-center text-gray-400">
+            © {new Date().getFullYear()} PlansLoan.com. All rights reserved. NMLS ID# 12345 | California Finance Lender's License #123456
+          </p>
+          <p className="text-center text-gray-400 text-sm mt-2">
+            Not a lender - A loan connection service. Licensed by the Department of Financial Protection and Innovation.
+          </p>
         </div>
       </div>
     </footer>

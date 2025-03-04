@@ -8,37 +8,37 @@ import vikram from "../assets/images/vikram-joshi.png";
 
 const testimonials = [
   {
-    name: 'Rakesh Sharma',
-    title: 'Position, Company name',
+    name: 'Michael Thompson',
+    title: 'Small Business Owner',
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
-    image: rakesh,
+      "PlansLoan helped me cover payroll during a slow season. The process was incredibly quick, and I received the funds within 24 hours. Their service kept my business running smoothly.",
+    image: rakesh, // You'll need to update these image imports
     rating: 5
   },
   {
-    name: 'Priya Malhotra',
-    title: 'Position, Company name',
+    name: 'Sarah Martinez',
+    title: 'Healthcare Worker',
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      "When my car broke down and I needed to get to work, PlansLoan came through with a quick loan. The application was simple, and their customer service team was exceptionally helpful.",
     image: priya,
     rating: 5
   },
   {
-    name: 'Neha Gupta',
-    title: 'Position, Company name',
+    name: 'David Wilson',
+    title: 'Construction Worker',
     content:
-      "I needed an urgent AC repair, and 24x7 Services Centers came through! The technician was on time, friendly, and fixed the issue quickly. Excellent service from start to finish!",
+      "Between projects, I needed some help with bills. PlansLoan made it easy to get a short-term loan. Their platform is straightforward and the approval process was faster than I expected!",
     image: neha,
     rating: 5
   },
   {
-    name: 'Vikram Joshi',
-    title: 'Position, Company name',
+    name: 'Jennifer Anderson',
+    title: 'Retail Store Manager',
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      "When our store needed emergency repairs, PlansLoan provided the funding we needed within hours. Their quick response and flexible terms helped us stay open for business.",
     image: vikram,
     rating: 5
-  },
+  }
 ];
 
 export default function TestimonialCarousel() {

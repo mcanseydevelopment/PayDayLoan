@@ -13,29 +13,25 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
   {
-    question: "Do you offer a free trial?",
-    answer: "We don't offer a free trial, but we do offer a free consultation to discuss your project and how we can help you achieve your goals. Get in touch with us to schedule a call with our team."
+    question: 'How Much Can I Borrow?',
+    answer: 'The amount a lender or lending partner is willing to give you depends on how the lender or lending partner evaluates a number of factors, including your creditworthiness. Also, please be aware of applicable legal restrictions (loans are not available in all states). Many lenders or lending partners in our network will loan between $100 and $5,000.',
   },
   {
-    question: "What can i expect during the initial call?",
-    answer: "During the initial call, our expert team will discuss your business goals, current challenges, and desired outcomes. We'll provide a high-level overview of our approach and how we can help you achieve your objectives."
+    question: 'How Is My Private Information Protected?',
+    answer: 'We use industry-recognized security and advanced encryption technology to protect your personal information. Your information is transmitted and stored securely in an encrypted format. Please review our privacy policy for additional details.',
   },
   {
-    question: "Do you offer a guarantee?",
-    answer: "Yes, we offer a satisfaction guarantee on all our services. If you're not completely satisfied with our work, we'll work with you to make it right or provide a refund according to our terms of service."
+    question: 'How Long Does the Process Take?',
+    answer: 'It should only take a few minutes to complete our secure online form. After we receive your information, we immediately start looking for a lender or lending partner that is willing to work with you. You should have a response from one of our lenders or lending partners within minutes. Final approval and funding is often done in as little as 24 to 48 hours.',
   },
   {
-    question: "Am i eligible for your services?",
-    answer: "We work with businesses of all sizes, from startups to enterprise-level companies. If you're looking to grow your online presence through Shopify, you're likely eligible for our services."
+    question: 'What Are the Requirements to Apply?',
+    answer: 'To apply for a loan, you typically need to: be at least 18 years old, have a valid government-issued ID, provide proof of regular income, have an active checking account, and be a permanent US resident. No minimum credit score is required, as we work with lenders who consider factors beyond just credit history.',
   },
   {
-    question: "How long are your contracts?",
-    answer: "Our contract lengths are flexible and tailored to your needs. We offer month-to-month services as well as longer-term engagements, depending on your project requirements and goals."
+    question: 'When Do I Need to Repay the Loan?',
+    answer: 'Repayment terms vary by lender and loan type, but typically payday loans are due on your next pay date, usually within 14-30 days. The exact repayment date and terms will be clearly disclosed in your loan agreement before you accept the offer. Some lenders may also offer extended payment plans if needed.',
   },
-  {
-    question: "How are we different from other marketing agencies?",
-    answer: "We specialize exclusively in Shopify development and optimization, providing focused expertise rather than general marketing services. Our team has extensive experience specifically in e-commerce and Shopify platforms."
-  }
 ]
 
 export default function FAQSection() {

@@ -3,7 +3,7 @@ import React from "react";
 const ImportantDisclosures: React.FC = () => {
   return (
 <>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto mb-12">
         <h2 className="text-white text-xl font-semibold bg-blue-600 py-4 px-6 rounded-t-lg">
           Important Disclosures. Please Read Carefully.
         </h2>
@@ -15,7 +15,7 @@ const ImportantDisclosures: React.FC = () => {
           <p className="mt-4 text-gray-700">
             This website uses Site Visit Recordation Technology to memorialize
             site visits, including technology provided by third parties like
-            Jornaya’s LeadiD. By submitting your information through this
+            Jornaya's LeadiD. By submitting your information through this
             website, you consent to the use of Site Visit Recordation
             Technology. The owner of this website is not a lender or agent of
             any lender and does not take loan applications or otherwise engage

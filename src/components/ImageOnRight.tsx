@@ -16,7 +16,7 @@ export default function ImageOnRight() {
         </div>
 
         {/* Left side - Content */}
-        <div className="w-full xl:w-1/2 md:p-0 p-1 xl:p-12 flex flex-col justify-center md:mt-8 mt-1 xl:mt-0">
+        <div className="w-full xl:w-1/2 md:p-0 p-1 xl:pr-12 flex flex-col justify-center md:mt-8 mt-1 xl:mt-0">
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 leading-tight">
             It's That Simple, Fast, Easy, and Secure!
           </h1>
