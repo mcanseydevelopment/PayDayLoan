@@ -73,26 +73,26 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <li>
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Payday Loans
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                </Link>
+                </li>
+                <li>
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Short-term Loans
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                </Link>
+                </li>
+                <li>
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Emergency Loans
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                </Link>
+                </li>
+                <li>
+                <Link to="/" className="text-gray-300 hover:text-white">
                   Cash Advances
-                </a>
-              </li>
+                </Link>
+                </li>
             </ul>
           </div>
 
@@ -101,9 +101,9 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Other Pages</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/privacyPolicy/" className="text-gray-300 hover:text-white">
+                <Link to="/privacyPolicy/" className="text-gray-300 hover:text-white">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
                 <Link to="/termsOfUse/" className="text-gray-300 hover:text-white">
