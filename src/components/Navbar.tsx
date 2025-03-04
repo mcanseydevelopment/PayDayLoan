@@ -20,18 +20,18 @@ const Navbar: React.FC = () => {
           <div className="hidden lg:flex space-x-6">
             <a href="/" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">Home</a>
             <a href="howItWorks" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">How it Works</a>
-            <a href="aboutUs" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">About us</a>
-            <a href="contact" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">Contact us</a>
+            <a href="/about" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">About us</a>
+            <a href="/contact" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">Contact us</a>
           </div>
           
-          <button className="hidden lg:flex bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 items-center gap-2">
+            <a href="/" className="hidden lg:flex bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 items-center gap-2">
             Apply Now
             <img 
               src={arrowIcon} 
               alt="arrow right"
               className="inline-block w-[30px] h-[30px]"
             />
-          </button>
+            </a>
         </div>
       </nav>
     </>

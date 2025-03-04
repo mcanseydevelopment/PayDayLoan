@@ -20,7 +20,7 @@ export default function LoanHero() {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/about" className="text-gray-700 hover:text-green-600">
+            <a href="/about/" className="text-gray-700 hover:text-green-600">
               About Us
             </a>
             <a href="/faq" className="text-gray-700 hover:text-green-600">

@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import FAQSection from './components/FAQAccordion';
 import Footer from './components/Footer';
 import HowItWorks from './components/HowItWorks';
+import HowItWorksPage from './components/HowItWorksPage';
 import ImageOnLeft from './components/ImageOnLeft';
 import ImageOnRight from './components/ImageOnRight';
 import ImportantDisclosures from './components/ImportantDisclosures';
@@ -12,6 +13,10 @@ import NotFound from './components/NotFound';
 import ProductFeatures from './components/ProductFeatures';
 import TestimonialCarousel from './components/testimonials-slider';
 import Terms from './components/Terms';
+import About from './components/About';
+import Disclaimer from './components/Disclaimer';
+import Privacy from './components/Privacy';
+import Contact from './components/Contact';
 import { Helmet } from 'react-helmet-async';
 
 function App() {
@@ -40,6 +45,24 @@ function App() {
               </>
             } 
           />
+          <Route path="/about" element={
+            <>
+              <Navbar />
+              <About />
+              <Footer />
+            </>
+          } />
+          <Route path="/howItWorks" element={
+            <>
+              <Helmet>
+                <title>How It Works - PlansLoan</title>
+                <meta name="description" content="Learn how PlansLoan connects you with lenders for quick and easy personal loans." />
+              </Helmet>
+              <Navbar />
+              <HowItWorksPage />
+              <Footer />
+            </>
+          } />
           <Route path="/termsOfUse" element={
             <>
               <Helmet>
@@ -48,6 +71,39 @@ function App() {
               </Helmet>
               <Navbar />
               <Terms />
+              <Footer />
+            </>
+          } />
+          <Route path="/disclaimer" element={
+            <>
+              <Helmet>
+                <title>Disclaimer - PlansLoan</title>
+                <meta name="description" content="Important disclosures and disclaimers about PlansLoan's services." />
+              </Helmet>
+              <Navbar />
+              <Disclaimer />
+              <Footer />
+            </>
+          } />
+          <Route path="/privacyPolicy" element={
+            <>
+              <Helmet>
+                <title>Privacy Policy - PlansLoan</title>
+                <meta name="description" content="Learn about PlansLoan's privacy practices and your rights regarding your personal information." />
+              </Helmet>
+              <Navbar />
+              <Privacy />
+              <Footer />
+            </>
+          } />
+          <Route path="/contact" element={
+            <>
+              <Helmet>
+                <title>Contact Us - PlansLoan</title>
+                <meta name="description" content="Get in touch with PlansLoan. We're here to help with any questions about our loan connection service." />
+              </Helmet>
+              <Navbar />
+              <Contact />
               <Footer />
             </>
           } />

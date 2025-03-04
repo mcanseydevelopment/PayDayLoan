@@ -52,24 +52,19 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/about/" className="text-gray-300 hover:text-white">
                   About us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="/services" className="text-gray-300 hover:text-white">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Blogs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <Link to="/contact" className="text-gray-300 hover:text-white">
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -106,19 +101,19 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Other Pages</h3>
             <ul className="space-y-3">
               <li>
-                <a href="privacyPolicy" className="text-gray-300 hover:text-white">
+                <a href="/privacyPolicy/" className="text-gray-300 hover:text-white">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <Link to="/termsOfUse" className="text-gray-300 hover:text-white">
+                <Link to="/termsOfUse/" className="text-gray-300 hover:text-white">
                   Terms of Use
                 </Link>
               </li>
               <li>
-                <a href="disclaimer" className="text-gray-300 hover:text-white">
+                <Link to="/disclaimer/" className="text-gray-300 hover:text-white">
                   Disclaimer
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

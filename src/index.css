@@ -12,3 +12,42 @@
   * {
     font-family: inherit;
   }
+
+/* Add this to your CSS */
+.clip-upward {
+  clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+}
+
+/* Add these styles to your existing CSS file */
+
+@media screen and (max-width: 768px) {
+  .quick-loan-form {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+  
+  .quick-loan-form > div {
+    width: 100%;
+    border-radius: 0.5rem;
+    border-left: none;
+    border-top: 4px solid #2563eb;
+  }
+}
+
+/* Add animation for the form */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.quick-loan-form {
+  animation: slideIn 0.5s ease-out;
+}
