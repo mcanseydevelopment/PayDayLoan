@@ -1,5 +1,6 @@
 import type React from "react"
 import { Facebook, Instagram, Send, Linkedin, MapPin, Phone, Mail } from "lucide-react"
+import { Link } from "react-router-dom"
 
 const Footer: React.FC = () => {
   return (
@@ -105,17 +106,17 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Other Pages</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="privacyPolicy" className="text-gray-300 hover:text-white">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
-                  Terms & Conditions
-                </a>
+                <Link to="/termsOfUse" className="text-gray-300 hover:text-white">
+                  Terms of Use
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">
+                <a href="disclaimer" className="text-gray-300 hover:text-white">
                   Disclaimer
                 </a>
               </li>
