@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://plansloan.com/sitemap.xml

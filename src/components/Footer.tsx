@@ -122,10 +122,10 @@ const Footer: React.FC = () => {
         {/* Divider */}
         <div className="border-t border-gray-800 mt-12 pt-6">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} PlansLoan.com. All rights reserved. NMLS ID# 12345 | California Finance Lender's License #123456
+            © {new Date().getFullYear()} PlansLoan.com. All rights reserved.
           </p>
           <p className="text-center text-gray-400 text-sm mt-2">
-            Not a lender - A loan connection service. Licensed by the Department of Financial Protection and Innovation.
+            Not a lender - A loan connection service.
           </p>
         </div>
       </div>

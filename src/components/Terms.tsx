@@ -85,7 +85,7 @@ const Terms: React.FC = () => {
     },
     {
       title: "Privacy",
-      content: `PlansLoan.com’s Privacy Policy, which is incorporated herein by reference, is applicable to any data supplied through 
+      content: `PlansLoan.com's Privacy Policy, which is incorporated herein by reference, is applicable to any data supplied through 
       this Site. The Privacy Policy sets out your rights and our responsibilities regarding your personal information.`
     },
     {
@@ -209,7 +209,7 @@ const Terms: React.FC = () => {
             {sections.map((section, index) => (
               <div
                 key={index}
-                ref={el => sectionRefs.current[index] = el}
+                ref={el => { sectionRefs.current[index] = el; }}
                 id={`section-${index + 1}`}
                 className="bg-white rounded-xl shadow-sm border border-gray-100"
               >

@@ -7,10 +7,8 @@ const MobileMenu: React.FC = () => {
 
   const menuItems = [
     { name: 'Home', href: '/' },
-    { name: 'Loan', href: '#loan' },
     { name: 'How it Works', href: '#how-it-works' },
     { name: 'About us', href: '#about' },
-    { name: 'Blog', href: '#blog' },
     { name: 'Contact us', href: '#contact' }
   ];
 
@@ -58,21 +56,6 @@ const MobileMenu: React.FC = () => {
                     {item.name}
                   </motion.a>
                 ))}
-                <motion.button 
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.8 }}
-                  className="mt-8 bg-white text-blue-900 px-6 py-3 rounded-full hover:bg-blue-50 transition-colors duration-300 flex items-center gap-2 justify-center w-auto mx-auto md:w-48"
-                >
-                  Apply Now
-                  <img 
-                    src={arrowIcon} 
-                    alt="arrow right"
-                    width={20}
-                    height={20}
-                    className="inline-block"
-                  />
-                </motion.button>
               </div>
               <motion.div 
                 initial={{ opacity: 0 }}
