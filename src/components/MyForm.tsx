@@ -1,6 +1,5 @@
 "use client";
 import { useEffect } from 'react';
-import FormDataHandler from './FormDataHandler';
 // import FormDataHandler from './FormDataHandler';
 
 declare global {
@@ -118,7 +117,7 @@ export default function MyForm() {
 
   return (
     <>
-      <FormDataHandler />
+      {/* <FormDataHandler /> */}
     </>
   );
 }
