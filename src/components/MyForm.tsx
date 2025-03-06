@@ -9,13 +9,6 @@ declare global {
         campaignid: number;
         theme: string;
         leadtypeid: number;
-        declinedURL?: string;
-        sourceSubId?: string;
-        v1?: string;
-        v2?: string;
-        v3?: string;
-        v4?: string;
-        loanAmounts?: any[];
       };
     };
   }
@@ -70,13 +63,6 @@ export default function MyForm() {
     window.lmpost = {
       options: {
         campaignid: 296709,
-        declinedURL: '',
-        sourceSubId: '',
-        v1: '',
-        v2: '',
-        v3: '',
-        v4: '',
-        loanAmounts: [],
         theme: 'theme5',
         leadtypeid: 19
       }
