@@ -61,7 +61,7 @@ export default function TestimonialCarousel() {
   }, [emblaApi, onSelect]);
 
   return (
-    <section className="bg-[#F5F5F5] my-8 sm:my-12 md:my-16 rounded-lg sm:rounded-xl px-4 lg:px-0">
+    <section className="bg-[#F5F5F5] mt-8 sm:mt-12 md:mt-16 rounded-lg sm:rounded-xl px-4 lg:px-0">
       <div className="max-w-7xl mx-auto py-8 md:py-12">
         {/* Header section */}
         <div className="mb-8 flex flex-col md:flex-row items-center justify-between gap-4">
