@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MapPin className="mr-2" size={20} />
-                <span>2504 Broadway, New York, NY 10025</span>
+                <span>917 W Jasmine Way Rialto, CA, 92376</span>
               </div>
               <div className="flex items-center">
                 <Phone className="mr-2" size={20} />

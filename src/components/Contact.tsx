@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                     <MapPin className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-2">Our Address</h3>
-                  <p className="text-gray-600">PlansLoan LLC<br />2504 Broadway<br />New York, NY 10025</p>
+                    <p className="text-gray-600">PlansLoan LLC<br />917 W Jasmine Way<br />Rialto, CA 92376</p>
                 </div>
                 
                 <div className="flex flex-col items-center text-center p-6 bg-blue-50 rounded-lg">
@@ -178,14 +178,14 @@ const Contact: React.FC = () => {
             </h2>
             <div className="h-80 w-full rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.0704834956166!2d-73.96862908459713!3d40.79035047932407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2589a01836801%3A0x4e96994f9ee1770!2s2504%20Broadway%2C%20New%20York%2C%20NY%2010025%2C%20USA!5e0!3m2!1sen!2sus!4v1678298666029!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="PlansLoan Office Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.937226631452!2d-117.3958246!3d34.099475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34b0f1f5f5c67%3A0xed39ba3cfe6ee3b9!2s917%20W%20Jasmine%20Way%2C%20Rialto%2C%20CA%2092376!5e0!3m2!1sen!2sus!4v1678298666029!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="PlansLoan Office Location"
               ></iframe>
             </div>
           </div>

@@ -129,7 +129,7 @@ const Terms: React.FC = () => {
     },
     {
       title: "Contact Information",
-      content: `Company name: PlansLoan LLC\nAddress: 2504 Broadway, New York, NY 10025\nPhone: 1-800-555-0123\nEmail Address: support@plansloan.com`
+      content: `Company name: PlansLoan LLC\nAddress: 917 W Jasmine Way Rialto, CA, 92376\nPhone: 1-800-555-0123\nEmail Address: support@plansloan.com`
     },
   ];
 
