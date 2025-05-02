@@ -87,6 +87,22 @@ const ImportantDisclosures: React.FC = () => {
             </p>
           </div>
           
+          {/* State Restrictions and Licensing */}
+          <div className="mt-4 bg-gray-50 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">State Restrictions and Licensing</h4>
+            <p className="text-gray-700 text-sm">
+              Loan availability and terms are subject to state regulations. Not all applicants will qualify for all products in all states. Some lenders may be licensed under tribal law and may not be subject to state lending laws. Make sure to review your loan agreement carefully before signing.
+            </p>
+          </div>
+
+          {/* Data Security */}
+          <div className="mt-4 bg-gray-50 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Data Security</h4>
+            <p className="text-gray-700 text-sm">
+              We take your privacy and security seriously. All data submitted on this site is encrypted using industry-standard SSL protocols. We maintain appropriate safeguards to protect personal information.
+            </p>
+          </div>
+          
           <p className="mt-6 italic text-sm text-gray-500">
             This website is not a lender. We connect users with independent, licensed lenders or lending partners who may offer credit options. Submitting your information through this site does not guarantee loan approval.
           </p>
