@@ -129,7 +129,7 @@ const Terms: React.FC = () => {
     },
     {
       title: "Contact Information",
-      content: `Company name: PlansLoan LLC\nAddress: 917 W Jasmine Way Rialto, CA, 92376\nPhone: 1-800-555-0123\nEmail Address: support@plansloan.com`
+      content: `Company name: PlansLoan LLC\nAddress: 917 W Jasmine Way Rialto, CA, 92376\nPhone: +1 (209) 322-4991 use this number instead\nEmail Address: support@plansloan.com`
     },
   ];
 
@@ -245,7 +245,7 @@ const Terms: React.FC = () => {
           {/* Footer */}
           <footer className="mt-16 pt-8 border-t border-gray-200 text-center">
             <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} PlansLoan LLC. All rights reserved. NMLS ID# 12345
+              © {new Date().getFullYear()} PlansLoan LLC. All rights reserved.
             </p>
             <div className="mt-4 flex justify-center space-x-4 text-sm text-gray-500">
               <a href="/about" className="hover:text-blue-600">About Us</a>

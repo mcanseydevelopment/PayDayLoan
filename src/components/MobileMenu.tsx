@@ -64,7 +64,6 @@ const MobileMenu: React.FC = () => {
                 className="mt-auto text-white/60 text-sm"
               >
                 <p>© {new Date().getFullYear()} PlansLoan. All rights reserved.</p>
-                <p className="mt-2">NMLS #12345</p>
               </motion.div>
             </motion.div>
           </motion.div>
