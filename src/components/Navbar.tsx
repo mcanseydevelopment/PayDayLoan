@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           </div>
           
             <a href="/" className="hidden lg:flex bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 items-center gap-2">
-            Apply Now
+            Request Loan
             <img 
               src={arrowIcon} 
               alt="arrow right"

@@ -56,21 +56,21 @@ export default function LoanHero() {
                 <div className="bg-green-500 rounded-full p-4 mb-4">
                   <Edit3 className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-medium">Fill Your Quick Form</p>
+                <p className="font-medium">Complete Your Form</p>
               </div>
 
               <div className="flex flex-col items-center text-center">
                 <div className="bg-green-500 rounded-full p-4 mb-4">
                   <Shield className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-medium">Get Personal Lender</p>
+                <p className="font-medium">Connect With Lenders</p>
               </div>
 
               <div className="flex flex-col items-center text-center">
                 <div className="bg-green-500 rounded-full p-4 mb-4">
                   <DollarSign className="h-6 w-6 text-white" />
                 </div>
-                <p className="font-medium">Take Your Loan!</p>
+                <p className="font-medium">Review Loan Options</p>
               </div>
             </div>
           </div>

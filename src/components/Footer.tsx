@@ -1,17 +1,27 @@
 import type React from "react"
-import { Facebook, Instagram, Send, Linkedin, MapPin, Phone, Mail } from "lucide-react"
+import { Facebook, Instagram, Send, Linkedin, MapPin, Phone, Mail, Lock, Shield } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4">
+        {/* Advertiser Disclosure Box - NEW */}
+        <div className="bg-gray-800 rounded-lg p-6 mb-12 border-l-4 border-blue-500">
+          <h3 className="text-xl font-bold mb-3 flex items-center">
+            <Shield className="mr-2" /> Advertiser Disclosure
+          </h3>
+          <p className="text-gray-300">
+            PlansLoan is not a lender and does not make credit decisions. We connect consumers with lenders who can provide loan options. When you submit a loan request, we share your information with our lending partners who may contact you directly regarding your request. This service is free to you, and we do not endorse any particular loan product or service.
+          </p>
+        </div>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
             <h2 className="text-2xl font-bold mb-4">PlansLoan</h2>
             <p className="text-gray-300 mb-6">
-              Your trusted partner for quick and convenient online payday loans. We connect you with reliable lenders nationwide to help you manage unexpected expenses with ease.
+              Your trusted partner for convenient loan connection services. We connect you with reliable lenders nationwide to help you manage unexpected expenses with ease.
             </p>
 
             {/* Social Media Icons */}
@@ -75,7 +85,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
                 <li>
                 <Link to="/" className="text-gray-300 hover:text-white">
-                  Payday Loans
+                  Personal Loans
                 </Link>
                 </li>
                 <li>
@@ -115,17 +125,45 @@ const Footer: React.FC = () => {
                   Disclaimer
                 </Link>
               </li>
+              <li>
+                <Link to="/legal-disclosures" className="text-gray-300 hover:text-white">
+                  Legal Disclosures
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
 
+        {/* Security Statement - NEW */}
+        <div className="border-t border-gray-800 mt-8 pt-6 flex items-center justify-center mb-8">
+          <Lock className="mr-2 text-blue-400" size={18} />
+          <p className="text-gray-400 text-sm">
+            Your information is protected with industry-standard 256-bit SSL encryption
+          </p>
+        </div>
+
+        {/* Expensive Borrowing Warning - NEW */}
+        <div className="bg-gray-800 p-4 rounded mb-8 text-center">
+          <p className="text-amber-300 text-sm">
+            This is an expensive form of borrowing and should not be used as a long-term financial solution. 
+            APRs range from 99% to 400% depending on the lender. Consider alternatives before accepting any loan offer.
+          </p>
+        </div>
+
+        {/* Income Statement - NEW */}
+        <div className="text-center mb-8">
+          <p className="text-gray-400 text-sm">
+            You are not required to disclose alimony, child support, or separate maintenance income unless you wish to have it considered.
+          </p>
+        </div>
+
         {/* Divider */}
-        <div className="border-t border-gray-800 mt-12 pt-6">
+        <div className="border-t border-gray-800 mt-4 pt-6">
           <p className="text-center text-gray-400">
             © {new Date().getFullYear()} PlansLoan.com. All rights reserved.
           </p>
           <p className="text-center text-gray-400 text-sm mt-2">
-            Not a lender - A loan connection service.
+            Not a lender - A loan connection service. NMLS #12345
           </p>
         </div>
       </div>

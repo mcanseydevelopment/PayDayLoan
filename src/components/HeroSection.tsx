@@ -20,28 +20,28 @@ const HeroSection: React.FC = () => {
       <div className="mx-auto max-w-7xl px-4 flex flex-col xl:flex-row items-center justify-between gap-8 relative z-10 h-full">
         {/* Left Section */}
         <div className="xl:w-[45%] w-full text-center xl:text-left mb-3 xl:mb-0 flex flex-col justify-center items-center xl:items-start">
-          <h1 className="mb-4 flex flex-col space-y-2 items-center xl:items-start">
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight flex items-center gap-2">
-              Fast & Easy <img 
-                src={cash} 
-                alt="Cash pot" 
-                className="inline-block object-contain w-[40px] md:w-[50px] lg:w-[70px]"
-              /> Cash
+            <h1 className="mb-4 flex flex-col space-y-2 items-center xl:items-start">
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight flex items-center gap-2">
+              Convenient&nbsp;Loan <img 
+              src={cash} 
+              alt="Cash pot" 
+              className="inline-block object-contain w-[35px] sm:w-[40px] md:w-[50px] lg:w-[70px]"
+              /> Options
             </span>
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              Loans Get Approved
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+              Connect With Lenders
             </span>
-            <span className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              In Few Minutes!
+            <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+              Who Can Help!
             </span>
-          </h1>
+            </h1>
           <p className="text-base md:text-lg mb-8 max-w-xl text-center xl:text-left">
-            Apply Online with No Credit Check & Get Cash Deposited in Your Account Within 24 Hours!
+            Credit may be checked. Approval times vary by lender. Funds may be deposited as soon as the next business day if approved.
           </p>
           {/* Buttons */}
           <div className="flex flex-row justify-center xl:justify-start space-x-4">
             <button className="text-sm md:text-base bg-white text-blue-700 px-6 md:px-8 py-2 md:py-3 rounded-[40px] whitespace-nowrap">
-              Get Started
+              See If You Qualify
             </button>
             <button className="text-sm md:text-base px-6 md:px-8 py-2 md:py-3 rounded-lg whitespace-nowrap">
               How it works
@@ -90,7 +90,7 @@ const HeroSection: React.FC = () => {
                 />
                 <div className="flex flex-col">
                   <div className="text-[18px] md:text-[24px] font-medium">
-                    In Just 24 Hrs
+                    Funding Times Vary
                   </div>
                 </div>
               </div>

@@ -73,6 +73,11 @@ const HowItWorks: React.FC = () => {
           </div>
         ))}
       </div>
+      <div className="text-center mt-8">
+        <a href="/" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-colors">
+          See If You Qualify
+        </a>
+      </div>
     </section>
   );
 };

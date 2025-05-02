@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star, Info } from "lucide-react";
 import neha from "../assets/images/neha-gupta.png";
 import priya from "../assets/images/priya-malhotra.png";
 import rakesh from "../assets/images/rakesh-sharma.png";
@@ -12,7 +12,7 @@ const testimonials = [
     title: 'Small Business Owner',
     content:
       "PlansLoan helped me cover payroll during a slow season. The process was incredibly quick, and I received the funds within 24 hours. Their service kept my business running smoothly.",
-    image: rakesh, // You'll need to update these image imports
+    image: rakesh,
     rating: 5
   },
   {
@@ -132,6 +132,14 @@ export default function TestimonialCarousel() {
               </div>
             ))}
           </div>
+        </div>
+        
+        {/* Testimonial Disclaimer */}
+        <div className="mt-6 flex items-start bg-blue-50 p-4 rounded-lg">
+          <Info className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-gray-600">
+            <span className="font-medium">Representative experiences:</span> These testimonials represent the experiences of actual customers. Individual results may vary depending on financial circumstances, lender approval, and other factors. Loans are subject to lender approval.
+          </p>
         </div>
       </div>
     </section>

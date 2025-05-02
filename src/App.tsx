@@ -107,6 +107,17 @@ function App() {
               <Footer />
             </>
           } />
+          <Route path="/legal-disclosures" element={
+            <>
+              <Helmet>
+                <title>Legal Disclosures - PlansLoan</title>
+                <meta name="description" content="Important legal disclosures from PlansLoan regarding our loan connection service." />
+              </Helmet>
+              <Navbar />
+              <ImportantDisclosures />
+              <Footer />
+            </>
+          } />
           <Route path="*" element={
             <>
               <Helmet>

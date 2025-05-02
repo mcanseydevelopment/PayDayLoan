@@ -11,8 +11,8 @@ const slides = [
     description: 'Connect with one or more loan offers and decide if it\'s right for you',
   },
   {
-    title: 'Get Cash',
-    description: 'Receive your funds in as fast as one business day',
+    title: 'Receive Funds',
+    description: 'If approved, funds may be deposited as soon as the next business day',
   },
 ];
 
@@ -31,7 +31,7 @@ const Slider: React.FC = () => {
     <div className="bg-green-700 text-white py-10">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 p-4">
-          <h2 className="text-3xl font-semibold mb-4">It's That Simple As Illustrated</h2>
+          <h2 className="text-3xl font-semibold mb-4">It&apos;s That Simple As Illustrated</h2>
           <div className="space-y-4">
             {slides.map((slide, index) => (
               <div key={index} className={`transition-opacity duration-500 ${currentSlide === index ? 'opacity-100' : 'opacity-0'}`}>
@@ -41,7 +41,7 @@ const Slider: React.FC = () => {
             ))}
           </div>
           <button className="mt-8 bg-white text-green-700 px-6 py-3 rounded-lg shadow-md hover:bg-green-100">
-            GET STARTED
+            SEE IF YOU QUALIFY
           </button>
         </div>
         <div className="md:w-1/2 relative p-4">

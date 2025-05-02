@@ -17,18 +17,18 @@ const LenderWaiting: React.FC = () => {
           <h3 className="text-[2.5rem] font-semibold mb-8">Already Waiting</h3>
           <div className="flex justify-center mb-8 gap-6">
             <div className="px-6">
-              <p className="text-[1.75rem]">No hidden fees</p>
+              <p className="text-[1.75rem]">Terms vary by lender</p>
             </div>
             <div className="px-6">
-              <p className="text-[1.75rem]">No prepayment penalties</p>
+              <p className="text-[1.75rem]">Loan options available</p>
             </div>
             <div className="px-6">
-              <p className="text-[1.75rem]">No origination fees</p>
+              <p className="text-[1.75rem]">Fast application process</p>
             </div>
           </div>
           <p className="text-zinc-300 mb-6 text-sm font-bold">JUST COMPLETE QUICK FORM TO PICK ONE OF THE BEST</p>
           <button className="bg-white text-green-700 px-12 py-4 rounded-lg shadow-md hover:bg-green-100 text-[1.5rem]">
-            GET STARTED
+            CHECK ELIGIBILITY
           </button>
         </div>
       </div>

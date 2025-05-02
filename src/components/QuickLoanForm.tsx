@@ -48,8 +48,8 @@ const QuickLoanForm: React.FC = () => {
     <div className="quick-loan-form fixed right-0 top-1/3 transform -translate-y-1/4 z-40">
       <div className="bg-white rounded-l-lg shadow-xl overflow-hidden w-72 border-l-4 border-blue-600">
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 p-4 text-white">
-          <h3 className="text-lg font-bold">Get Your Cash Now</h3>
-          <p className="text-sm text-blue-100">Fast approval, funds as soon as tomorrow</p>
+          <h3 className="text-lg font-bold">Check Your Eligibility</h3>
+          <p className="text-sm text-blue-100">See if you qualify for loan options</p>
         </div>
         
         <form onSubmit={handleSubmit} className="p-4">
@@ -93,12 +93,12 @@ const QuickLoanForm: React.FC = () => {
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md flex items-center justify-center transition-colors"
           >
-            <span>Get Cash Now</span>
+            <span>See Loan Options</span>
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>
           
           <p className="mt-2 text-xs text-gray-500 text-center">
-            Secure application, no obligation to accept
+            Secure request, no obligation to accept offers
           </p>
         </form>
         

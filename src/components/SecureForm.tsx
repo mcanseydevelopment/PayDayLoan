@@ -9,7 +9,7 @@ const SecureForm: React.FC = () => {
     <div className="bg-gradient-to-b from-[#0d924b] to-[#347222] text-white md:py-10 py-5">
       <div className="mx-auto text-center">
         <h2 className="text-[1.875rem] md:text-[2.625rem] font-bold mb-2">
-          A Few Minutes to Complete Our Secure Online Form
+          Complete Our Secure Online Form in Minutes
         </h2>
         <div className="w-32 mt-3 h-[3.2px] bg-white mx-auto mb-6"></div>
                 
@@ -22,13 +22,13 @@ const SecureForm: React.FC = () => {
                 <img 
                   className="md:mb-6 mb-2 mx-auto"
                   src={loanimage1}
-                  alt="Loan First Image"
+                  alt="Connect with Lenders"
                 />
               </div>
-              <h3 className="text-xl font-semibold md:mb-4 mb-1">Connect with a Helpful Lender</h3>
+              <h3 className="text-xl font-semibold md:mb-4 mb-1">Connect with Lenders</h3>
               <p className="text-base">
-                We commit to connecting you with an approved lender. We also made the process simple. 
-                No need to visit hundreds of websites and fill out numerous paperwork.
+                We aim to connect you with lenders who may help with your financial needs. 
+                Our streamlined process means you won&apos;t need to visit multiple websites or fill out numerous forms.
               </p>
               <div className="absolute hidden xl:block right-0 top-8 bottom-8 w-[1px] bg-white"></div>
               <div className="absolute block xl:hidden w-[calc(100%-4rem)] h-[1px] left-8 bottom-0 bg-white"></div>
@@ -40,18 +40,16 @@ const SecureForm: React.FC = () => {
                 <img 
                   className="md:mb-6 mb-2 mx-auto"
                   src={loanimage2}
-                  alt="Loan 2nd Image"
+                  alt="Fast Response"
                 />
               </div>
-              <h3 className="text-xl font-semibold md:mb-4 mb-1">The Need for Speed</h3>
+              <h3 className="text-xl font-semibold md:mb-4 mb-1">Quick Response Times</h3>
               <p className="text-base">
-                Our online service readily serves your need to connect with a lender. 
-                The process takes a few minutes. Fill out our secure online form and we send 
-                an encrypted copy to an authorized lender to approve. Once you submit your information, 
-                you will be redirected to the lender's website where you can review the terms of the loan, 
-                including details about all the applicable rates and fees. If you accept these terms, 
-                the lender will deposit money directly into your bank account as quickly as the next business day. 
-                Every inquiry received is handled with care and speed.
+                Our online service connects you with a lender quickly. 
+                The process takes a few minutes. Fill out our secure online form, and we send 
+                an encrypted copy to an authorized lender to review. If you accept their terms, 
+                funds may be deposited into your bank account as soon as the next business day, depending on the lender.
+                Every request received is handled with care and efficiency.
               </p>
               <div className="absolute hidden xl:block right-0 top-8 bottom-8 w-[1px] bg-white"></div>
               <div className="absolute block xl:hidden w-[calc(100%-4rem)] h-[1px] left-8 bottom-0 bg-white"></div>
@@ -63,22 +61,21 @@ const SecureForm: React.FC = () => {
                 <img 
                   className="md:mb-6 mb-2 mx-auto"
                   src={loanimage3}
-                  alt="Loan 3rd Image"
+                  alt="Privacy"
                 />
               </div>
-              <h3 className="text-xl font-semibold md:mb-4 mb-1">Your Loan, Your Business</h3>
+              <h3 className="text-xl font-semibold md:mb-4 mb-1">Your Privacy Matters</h3>
               <p className="text-base">
-                We recognize a personal loan is a private matter. Reasons for needing money range 
-                from critical automobile maintenance, unexpected medical expenses, etc. Whatever 
-                your reason, we respect your privacy. Thus, we work with lenders familiar with 
-                your situation and are ready to help.
+                We recognize that financial matters are private. Reasons for needing money range 
+                from critical automobile maintenance to unexpected medical expenses. Whatever 
+                your reason, we respect your privacy and work with lenders who understand your situation.
               </p>
             </div>
           </div>
         </div>
 
         <button className="mt-8 bg-white text-green-700 px-20 py-4 rounded-lg shadow-md hover:bg-[#2d85cc] hover:text-white text-md font-bold">
-          GET STARTED
+          CHECK ELIGIBILITY
         </button>
       </div>
     </div>

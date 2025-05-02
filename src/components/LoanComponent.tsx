@@ -104,12 +104,12 @@ const LoanComponent: React.FC = () => {
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-700 mb-2">Simply receive the loan money</h3>
               <p className="text-gray-600">
-                Your loan will be deposited directly in your bank account, usually as soon as the next day.
+                If approved, your loan may be deposited directly in your bank account, often as soon as the next business day.
               </p>
             </div>
 
             <button className="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-8 rounded">
-              GET STARTED
+              CHECK ELIGIBILITY
             </button>
           </div>
         </div>
