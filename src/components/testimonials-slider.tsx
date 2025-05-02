@@ -134,11 +134,11 @@ export default function TestimonialCarousel() {
           </div>
         </div>
         
-        {/* Testimonial Disclaimer */}
+        {/* Testimonial Disclaimer - UPDATED */}
         <div className="mt-6 flex items-start bg-blue-50 p-4 rounded-lg">
           <Info className="h-5 w-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
           <p className="text-sm text-gray-600">
-            <span className="font-medium">Representative experiences:</span> These testimonials represent the experiences of actual customers. Individual results may vary depending on financial circumstances, lender approval, and other factors. Loans are subject to lender approval.
+            <span className="font-medium">Actor portrayals:</span> These testimonials are fictional and represent hypothetical customer experiences. The individuals shown are models, not actual customers. Individual experiences with loan services may vary depending on financial circumstances, lender approval, and other factors. Loans are subject to lender approval.
           </p>
         </div>
       </div>
