@@ -3,6 +3,17 @@ import { Facebook, Instagram, Send, Linkedin, MapPin, Phone, Mail, Lock, Shield 
 import { Link } from "react-router-dom"
 
 const Footer: React.FC = () => {
+  // Function to scroll to the form
+  const scrollToForm = () => {
+    const formElement = document.getElementById('form-container');
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If we're not on the homepage, go to home page and then scroll to form
+      window.location.href = '/#form-container';
+    }
+  };
+
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4">
@@ -79,29 +90,41 @@ const Footer: React.FC = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Services - UPDATED */}
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
                 <li>
-                <Link to="/" className="text-gray-300 hover:text-white">
+                <button 
+                  onClick={scrollToForm} 
+                  className="text-gray-300 hover:text-white text-left"
+                >
                   Personal Loans
-                </Link>
+                </button>
                 </li>
                 <li>
-                <Link to="/" className="text-gray-300 hover:text-white">
+                <button 
+                  onClick={scrollToForm} 
+                  className="text-gray-300 hover:text-white text-left"
+                >
                   Short-term Loans
-                </Link>
+                </button>
                 </li>
                 <li>
-                <Link to="/" className="text-gray-300 hover:text-white">
+                <button 
+                  onClick={scrollToForm} 
+                  className="text-gray-300 hover:text-white text-left"
+                >
                   Emergency Loans
-                </Link>
+                </button>
                 </li>
                 <li>
-                <Link to="/" className="text-gray-300 hover:text-white">
+                <button 
+                  onClick={scrollToForm} 
+                  className="text-gray-300 hover:text-white text-left"
+                >
                   Cash Advances
-                </Link>
+                </button>
                 </li>
             </ul>
           </div>
@@ -163,7 +186,7 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} PlansLoan.com. All rights reserved.
           </p>
           <p className="text-center text-gray-400 text-sm mt-2">
-            Not a lender - A loan connection service. NMLS #12345
+            Not a lender - A loan connection service.
           </p>
         </div>
       </div>

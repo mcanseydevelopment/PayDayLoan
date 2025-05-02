@@ -52,7 +52,7 @@ const Disclaimer: React.FC = () => {
               <div className="text-gray-600 space-y-4">
                 <p>
                   This website uses Site Visit Recordation Technology to memorialize site visits, including technology 
-                  provided by third parties like Jornaya's LeadiD. By submitting your information through this website, 
+                  provided by third parties like Jornaya&apos;s LeadiD. By submitting your information through this website, 
                   you consent to the use of Site Visit Recordation Technology.
                 </p>
               </div>
