@@ -29,8 +29,8 @@ function App() {
             element={
               <>
                 <Helmet>
-                  <title>PlansLoan - Quick & Easy Online Loans</title>
-                  <meta name="description" content="Get quick access to online payday loans with PlansLoan. Easy application process, fast approval, and secure transactions." />
+                  <title>PlansLoan - Loan Connection Service</title>
+                  <meta name="description" content="PlansLoan connects you with lenders offering personal loan options. Request to see if you qualify for a loan from our network of lending partners." />
                 </Helmet>
                 <Navbar />
                 <HeroSection />
