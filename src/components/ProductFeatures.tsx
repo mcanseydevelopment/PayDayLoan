@@ -6,7 +6,7 @@ const ProductFeatures: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl px-6 font-bold mb-16">Why Choose PlansLoan</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Feature 1 */}
+          {/* Feature 1 - Updated with qualifying language */}
           <div className="relative px-6 py-8">
             {/* Right border */}
             <div className="absolute top-0 right-0 h-full border-r border-dashed border-gray-600 md:block hidden"></div>
@@ -19,10 +19,10 @@ const ProductFeatures: React.FC = () => {
                 <div className="bg-white rounded-sm"></div>
               </div>
             </div>
-            {/* Content */}
-            <h2 className="text-2xl font-semibold mb-4">Quick Approval Process</h2>
+            {/* Content - Updated */}
+            <h2 className="text-2xl font-semibold mb-4">Efficient Application Process</h2>
             <p className="text-gray-300 mb-6">
-              Get approved in minutes, not days. Our streamlined process means you can receive funds as fast as the next business day after approval.
+              Our application typically takes minutes to complete. Approval times vary by lender, and funds may be available as soon as the next business day after approval.
             </p>
             {/* Learn More Link - keeping existing structure */}
           </div>

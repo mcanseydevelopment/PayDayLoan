@@ -3,7 +3,7 @@ export default function ImageOnLeft() {
   return (
     <div className="bg-[#F6FAFF] mt-12">
       <div className="max-w-7xl xl:mx-auto md:py-20 py-4 lg:mx-10 sm:mx-3 px-4 mt-4 md:mt-0 mx-auto rounded-lg overflow-hidden flex flex-col xl:flex-row">
-        {/* Left side - Image - No changes */}
+        {/* Left side - Image */}
         <div className="w-full xl:w-1/2 relative xl:h-auto h-[400px] rounded-xl">
           <div className="relative w-full h-full flex items-center justify-center">
           <img
@@ -28,7 +28,7 @@ export default function ImageOnLeft() {
                 <span className="text-xl">💰</span> Short-Term Loans for Financial Relief
                 </h2>
                 <p className="text-gray-600 ml-8">
-                Whether it&apos;s a personal loan or cash advance, our network of lenders may help with unexpected expenses.
+                Whether it&apos;s a personal loan or installment loan, our network of lenders may help with unexpected expenses.
                 </p>
             </div>
 

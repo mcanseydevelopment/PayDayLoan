@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Advertiser Disclosure Box - NEW */}
+        {/* Advertiser Disclosure Box */}
         <div className="bg-gray-800 rounded-lg p-6 mb-12 border-l-4 border-blue-500">
           <h3 className="text-xl font-bold mb-3 flex items-center">
             <Shield className="mr-2" /> Advertiser Disclosure
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h2 className="text-2xl font-bold mb-4">PlansLoan</h2>
+            <h2 className="text-2xl font-bold mb-4">PlansLoan LLC</h2>
             <p className="text-gray-300 mb-6">
               Your trusted partner for convenient loan connection services. We connect you with reliable lenders nationwide to help you manage unexpected expenses with ease.
             </p>
@@ -123,7 +123,7 @@ const Footer: React.FC = () => {
                   onClick={scrollToForm} 
                   className="text-gray-300 hover:text-white text-left"
                 >
-                  Cash Advances
+                  Funding Options
                 </button>
                 </li>
             </ul>
@@ -134,17 +134,17 @@ const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Other Pages</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/privacyPolicy/" className="text-gray-300 hover:text-white">
+                <Link to="/privacyPolicy" className="text-gray-300 hover:text-white">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/termsOfUse/" className="text-gray-300 hover:text-white">
+                <Link to="/termsOfUse" className="text-gray-300 hover:text-white">
                   Terms of Use
                 </Link>
               </li>
               <li>
-                <Link to="/disclaimer/" className="text-gray-300 hover:text-white">
+                <Link to="/disclaimer" className="text-gray-300 hover:text-white">
                   Disclaimer
                 </Link>
               </li>
@@ -157,7 +157,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Security Statement - NEW */}
+        {/* Security Statement */}
         <div className="border-t border-gray-800 mt-8 pt-6 flex items-center justify-center mb-8">
           <Lock className="mr-2 text-blue-400" size={18} />
           <p className="text-gray-400 text-sm">
@@ -165,7 +165,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* Expensive Borrowing Warning - NEW */}
+        {/* Expensive Borrowing Warning */}
         <div className="bg-gray-800 p-4 rounded mb-8 text-center">
           <p className="text-amber-300 text-sm">
             This is an expensive form of borrowing and should not be used as a long-term financial solution. 
@@ -173,7 +173,7 @@ const Footer: React.FC = () => {
           </p>
         </div>
 
-        {/* Income Statement - NEW */}
+        {/* Income Statement */}
         <div className="text-center mb-8">
           <p className="text-gray-400 text-sm">
             You are not required to disclose alimony, child support, or separate maintenance income unless you wish to have it considered.
@@ -183,7 +183,7 @@ const Footer: React.FC = () => {
         {/* Divider */}
         <div className="border-t border-gray-800 mt-4 pt-6">
           <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} PlansLoan.com. All rights reserved.
+            © {new Date().getFullYear()} PlansLoan LLC. All rights reserved.
           </p>
           <p className="text-center text-gray-400 text-sm mt-2">
             Not a lender - A loan connection service.

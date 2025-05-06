@@ -22,15 +22,15 @@ const steps: StepProps[] = [
     icon: drawingmode,
     title: "Step 2 - Get Approved",
     description:
-      "Our system instantly reviews your application. No credit check required! Whether you have good.",
+      "Our system reviews your application. Credit may be checked as part of the process. Approval is not guaranteed.",
     bgColor: "#F5EBF2",
     iconBg: "#C166A6"
   },
   {
     icon: drawingmode,
-    title: "Step 3 - Receive Cash",
+    title: "Step 3 - Access Funds",
     description:
-      "Complete a quick and secure online application in just a few minutes. No long paperwork or in-person visits",
+      "If approved by a lender, funds may be deposited into your account as soon as the next business day, depending on the lender",
     bgColor: "#EBFCFF",
     iconBg: "#019CB6"
   },
@@ -41,7 +41,7 @@ const HowItWorks: React.FC = () => {
     <section className="max-w-7xl xl:mx-auto lg:mx-10 sm:mx-3 px-4 mt-4 md:mt-0 md:pt-28 pt-36 md:pb-12 pb-0">
       <div className="text-center">
         <h2 className="text-2xl md:text-4xl font-semibold text-gray-900">
-          How it works
+          How It Works
         </h2>
         <div className="h-1 w-20 bg-blue-500 mx-auto mt-1"></div>
       </div>

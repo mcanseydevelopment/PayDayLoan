@@ -79,12 +79,23 @@ const ImportantDisclosures: React.FC = () => {
             </p>
           </div>
           
-          {/* Representative Example */}
+          {/* Representative Example - EXPANDED */}
           <div className="mt-4 bg-blue-50 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Representative Loan Example</h4>
-            <p className="text-gray-700 text-sm">
-              A typical payday loan of $500 with a 14-day term and an APR of 250% would have a single repayment of $635, including all fees and interest. Loan terms may range from 2 weeks to 24 months depending on the lender and product.
-            </p>
+            <h4 className="font-semibold mb-2">Representative Loan Examples</h4>
+            <div className="space-y-3">
+              <p className="text-gray-700 text-sm">
+                <span className="font-medium">Example 1 (Small loan):</span> A typical payday loan of $300 with a 14-day term and an APR of 400% would have a single repayment of $366, including principal and all fees and interest.
+              </p>
+              <p className="text-gray-700 text-sm">
+                <span className="font-medium">Example 2 (Medium loan):</span> A personal loan of $2,000 with a 6-month term and an APR of 99% would result in 6 monthly payments of approximately $424.13, for a total repayment of $2,544.78.
+              </p>
+              <p className="text-gray-700 text-sm">
+                <span className="font-medium">Example 3 (Large loan):</span> A personal loan of $5,000 with a 24-month term and an APR of 35.99% would result in 24 monthly payments of approximately $271.22, for a total repayment of $6,509.28.
+              </p>
+              <p className="text-gray-700 text-sm italic">
+                These are representative examples only. Actual loan terms, APRs, payment amounts, and total costs will vary based on the lender, your creditworthiness, state restrictions, and other factors.
+              </p>
+            </div>
           </div>
           
           {/* State Restrictions and Licensing */}
@@ -99,7 +110,7 @@ const ImportantDisclosures: React.FC = () => {
           <div className="mt-4 bg-gray-50 p-4 rounded-lg">
             <h4 className="font-semibold mb-2">Data Security</h4>
             <p className="text-gray-700 text-sm">
-              We take your privacy and security seriously. All data submitted on this site is encrypted using industry-standard SSL protocols. We maintain appropriate safeguards to protect personal information.
+              We take your privacy and security seriously. All data submitted on this site is encrypted using industry-standard 256-bit SSL protocols. We maintain appropriate safeguards to protect personal information.
             </p>
           </div>
           
