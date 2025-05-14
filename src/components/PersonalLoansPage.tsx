@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Check, ArrowRight, DollarSign, Clock, Shield, Info } from 'lucide-react';
+import { Check, ArrowRight, DollarSign, Clock, Info } from 'lucide-react';
 
 const PersonalLoansPage: React.FC = () => {
   return (
