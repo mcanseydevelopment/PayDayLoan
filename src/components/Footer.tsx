@@ -3,17 +3,6 @@ import { Facebook, Instagram, Send, Linkedin, MapPin, Phone, Mail, Lock, Shield 
 import { Link } from "react-router-dom"
 
 const Footer: React.FC = () => {
-  // Function to scroll to the form
-  const scrollToForm = () => {
-    const formElement = document.getElementById('form-container');
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // If we're not on the homepage, go to home page and then scroll to form
-      window.location.href = '/#form-container';
-    }
-  };
-
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4">
@@ -78,11 +67,6 @@ const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
-                <a href="/services" className="text-gray-300 hover:text-white">
-                  Services
-                </a>
-              </li>
-              <li>
                 <Link to="/contact" className="text-gray-300 hover:text-white">
                   Contact us
                 </Link>
@@ -94,38 +78,26 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
-                <li>
-                <button 
-                  onClick={scrollToForm} 
-                  className="text-gray-300 hover:text-white text-left"
-                >
+              <li>
+                <Link to="/personal-loans" className="text-gray-300 hover:text-white">
                   Personal Loans
-                </button>
-                </li>
-                <li>
-                <button 
-                  onClick={scrollToForm} 
-                  className="text-gray-300 hover:text-white text-left"
-                >
+                </Link>
+              </li>
+              <li>
+                <Link to="/short-term-loans" className="text-gray-300 hover:text-white">
                   Short-term Loans
-                </button>
-                </li>
-                <li>
-                <button 
-                  onClick={scrollToForm} 
-                  className="text-gray-300 hover:text-white text-left"
-                >
+                </Link>
+              </li>
+              <li>
+                <Link to="/emergency-loans" className="text-gray-300 hover:text-white">
                   Emergency Loans
-                </button>
-                </li>
-                <li>
-                <button 
-                  onClick={scrollToForm} 
-                  className="text-gray-300 hover:text-white text-left"
-                >
+                </Link>
+              </li>
+              <li>
+                <Link to="/funding-options" className="text-gray-300 hover:text-white">
                   Funding Options
-                </button>
-                </li>
+                </Link>
+              </li>
             </ul>
           </div>
 

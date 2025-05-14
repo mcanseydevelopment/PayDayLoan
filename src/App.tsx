@@ -17,12 +17,18 @@ import About from './components/About';
 import Disclaimer from './components/Disclaimer';
 import Privacy from './components/Privacy';
 import Contact from './components/Contact';
+import PersonalLoansPage from './components/PersonalLoansPage';
+import ShortTermLoansPage from './components/ShortTermLoansPage';
+import EmergencyLoansPage from './components/EmergencyLoansPage';
+import FundingOptionsPage from './components/FundingOptionsPage';
+import ScrollToTop from './components/ScrollToTop';
 import { Helmet } from 'react-helmet-async';
 
 function App() {
   return (
     <HelmetProvider>
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route 
             path="/" 
@@ -115,6 +121,50 @@ function App() {
               </Helmet>
               <Navbar />
               <ImportantDisclosures />
+              <Footer />
+            </>
+          } />
+          <Route path="/personal-loans" element={
+            <>
+              <Helmet>
+                <title>Personal Loans - PlansLoan</title>
+                <meta name="description" content="Explore personal loan options through PlansLoan's network of lending partners." />
+              </Helmet>
+              <Navbar />
+              <PersonalLoansPage />
+              <Footer />
+            </>
+          } />
+          <Route path="/short-term-loans" element={
+            <>
+              <Helmet>
+                <title>Short Term Loans - PlansLoan</title>
+                <meta name="description" content="Find short-term loan solutions for your immediate financial needs through PlansLoan." />
+              </Helmet>
+              <Navbar />
+              <ShortTermLoansPage />
+              <Footer />
+            </>
+          } />
+          <Route path="/emergency-loans" element={
+            <>
+              <Helmet>
+                <title>Emergency Loans - PlansLoan</title>
+                <meta name="description" content="Get connected with emergency loan providers quickly through PlansLoan's service." />
+              </Helmet>
+              <Navbar />
+              <EmergencyLoansPage />
+              <Footer />
+            </>
+          } />
+          <Route path="/funding-options" element={
+            <>
+              <Helmet>
+                <title>Funding Options - PlansLoan</title>
+                <meta name="description" content="Explore various funding options available through PlansLoan's lending network." />
+              </Helmet>
+              <Navbar />
+              <FundingOptionsPage />
               <Footer />
             </>
           } />
