@@ -12,7 +12,7 @@ interface StepProps {
 const steps: StepProps[] = [
   {
     icon: drawingmode,
-    title: "Step 1 - Apply Online",
+    title: "Step 1 - Request Online",
     description:
       "Complete a quick and secure online application in just a few minutes. No long paperwork or in-person visits",
     bgColor: "#FEEDEC",
