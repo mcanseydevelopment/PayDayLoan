@@ -25,13 +25,18 @@ const Navbar: React.FC = () => {
             <Link to="/contact" className="text-gray-600 hover:text-gray-800 transition-colors duration-300 text-[16px]">Contact us</Link>
           </div>
           
-            <a href="/" className="hidden lg:flex bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 items-center gap-2">
-            Request Loan
-            <img 
-              src={arrowIcon} 
-              alt="arrow right"
-              className="inline-block w-[30px] h-[30px]"
-            />
+            <a 
+              href="https://track.vcommission.com/t/MTIwMTYwXzExODA0/" 
+              className="hidden lg:flex bg-black text-white px-6 py-2 rounded-full hover:bg-gray-800 transition-all duration-300 items-center gap-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Request Loan
+              <img 
+                src={arrowIcon} 
+                alt="arrow right"
+                className="inline-block w-[30px] h-[30px]"
+              />
             </a>
         </div>
       </nav>
