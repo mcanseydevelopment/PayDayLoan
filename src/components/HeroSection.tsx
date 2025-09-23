@@ -1,5 +1,4 @@
 import React from 'react';
-import MyForm from './MyForm';
 import dollarIcon from '../assets/images/dollar.png';
 import clockIcon from '../assets/images/lightning.png';
 import shieldIcon from '../assets/images/safe-guard.png';
@@ -51,7 +50,18 @@ const HeroSection: React.FC = () => {
         {/* Right Section - Form */}
         <div className="xl:w-[45%] w-full z-10">
           <div className="w-full max-w-xl mx-auto rounded-lg" id="form-container">
-            <MyForm />
+              <div className="mt-6 flex justify-center">
+              <a
+                href="https://apply.plansloan.com"
+                aria-label="Apply Now"
+                className="inline-flex items-center gap-3 px-6 py-3 bg-white text-blue-700 text-sm md:text-base rounded-full shadow-lg hover:scale-105 transform transition-transform duration-200 focus:outline-none focus:ring-4 focus:ring-[#06B6D4]/30"
+              >
+                Apply Now
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </a>
+              </div>
           </div>
         </div>
       </div>
