@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
           <div className="w-full max-w-xl mx-auto rounded-lg" id="form-container">
               <div className="mt-6 flex justify-center">
               <a
-                href="https://apply.plansloan.com"
+                href="https://offer.plansloan.com?aid=505761&acid=2&subid={SUBID_HERE}&x_clickid={CLICKID_HERE}"
                 aria-label="Apply Now"
                 className="inline-flex items-center gap-3 px-6 py-3 bg-white text-blue-700 text-sm md:text-base rounded-full shadow-lg hover:scale-105 transform transition-transform duration-200 focus:outline-none focus:ring-4 focus:ring-[#06B6D4]/30"
               >
