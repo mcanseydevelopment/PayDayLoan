@@ -25,7 +25,7 @@ export default function ImageOnRight() {
             {/* Feature 1 */}
             <div className="space-y-2">
               <h2 className="text-xl font-semibold flex items-center gap-2">
-                ✅ Submit a Request Online & Get Matched
+                ✅ Submit Your Request to View Potential Options
               </h2>
               <p className="text-gray-600 ml-8">
                 Fill out a quick and secure form, and we&apos;ll connect you with trusted lenders offering loan options that may fit your needs.

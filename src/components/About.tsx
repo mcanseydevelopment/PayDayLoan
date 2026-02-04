@@ -103,7 +103,7 @@ const About: React.FC = () => {
           <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Service Commitment</h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              PlansLoan is not a lender or lending partner. Instead, we operate as a specialized connection service designed to match consumers with appropriate lending options. By submitting your information through our secure, user-friendly platform, we help facilitate connections with lenders and lending partners in our extensive network who are prepared to assist with your financial needs.
+              PlansLoan is not a lender and does not make lending decisions. We operate as a connection service that helps consumers explore suitable lending options. When you submit your information through our secure platform, we may connect you with lenders or lending partners from our network who can review your request and determine eligibility based on their criteria.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               Each lender or lending partner in our network has been carefully selected for their commitment to customer service, transparent terms, and efficient processes. They have streamlined their approval workflows to provide quick decisions and digital loan agreements that can be reviewed and signed online – no printing, faxing, or visiting physical locations required.

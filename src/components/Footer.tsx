@@ -1,8 +1,30 @@
 import type React from "react"
+import { useState } from "react"
 import { Facebook, Instagram, Send, Linkedin, MapPin, Phone, Mail, Lock, Shield } from "lucide-react"
 import { Link } from "react-router-dom"
 
 const Footer: React.FC = () => {
+  const [unsubscribeEmail, setUnsubscribeEmail] = useState("");
+  const [unsubscribeStatus, setUnsubscribeStatus] = useState<"idle" | "success">("idle");
+  const [unsubscribeMessage, setUnsubscribeMessage] = useState("");
+
+  const handleUnsubscribe = async (event: React.FormEvent) => {
+    event.preventDefault();
+    
+    if (!unsubscribeEmail) {
+      setUnsubscribeMessage("Please enter a valid email address");
+      return;
+    }
+
+    try {
+      // Add your unsubscribe API call here
+      // For now, simulating success
+      setUnsubscribeStatus("success");
+      setUnsubscribeMessage("Successfully unsubscribed!");
+    } catch (error) {
+      setUnsubscribeMessage("An error occurred. Please try again.");
+    }
+  };
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4">
@@ -150,6 +172,52 @@ const Footer: React.FC = () => {
           <p className="text-gray-400 text-sm">
             You are not required to disclose alimony, child support, or separate maintenance income unless you wish to have it considered.
           </p>
+        </div>
+
+        {/* Unsubscribe Form */}
+        <div className="max-w-md mx-auto mb-8">
+          <form
+            onSubmit={handleUnsubscribe}
+            className="mt-4 space-y-3">
+            <label className="block text-sm font-medium text-gray-200">
+              Unsubscribe from emails
+            </label>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                value={unsubscribeEmail}
+                onChange={(event) => {
+                  setUnsubscribeEmail(event.target.value);
+                  if (unsubscribeStatus !== "idle") {
+                    setUnsubscribeStatus("idle");
+                    setUnsubscribeMessage("");
+                  }
+                }}
+                placeholder="Enter your email"
+                className="flex-1 px-3 py-2 rounded-md bg-gray-800 border border-gray-700 text-sm text-gray-100 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                disabled={unsubscribeStatus === "success"}
+                aria-label="Unsubscribe email"
+              />
+              <button
+                type="submit"
+                className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors ${
+                  unsubscribeStatus === "success"
+                    ? "bg-emerald-600 cursor-default"
+                    : "bg-blue-600 hover:bg-blue-700"
+                }`}
+                disabled={unsubscribeStatus === "success"}
+              >
+                {unsubscribeStatus === "success"
+                  ? "Unsubscribed"
+                  : "Unsubscribe"}
+              </button>
+            </div>
+            {unsubscribeMessage && (
+              <p className={`text-sm ${unsubscribeStatus === "success" ? "text-emerald-400" : "text-red-400"}`}>
+                {unsubscribeMessage}
+              </p>
+            )}
+          </form>
         </div>
 
         {/* Divider */}
